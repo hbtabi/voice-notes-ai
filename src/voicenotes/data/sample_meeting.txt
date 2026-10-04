@@ -1,0 +1,23 @@
+# Weekly product sync - Hasenix Studio
+[00:00:04] Amira: Morning everyone, let's get started. Three things today: the beta launch, the onboarding drop-off, and hiring.
+[00:00:15] Daniel: Quick update on the beta. The mobile build passed QA yesterday, but the payment screen still crashes on older Android phones.
+[00:00:31] Amira: Is that a blocker for the launch?
+[00:00:36] Daniel: It is. I'll fix the Android payment crash by Wednesday and ship a new build to the testers.
+[00:00:52] Priya: The onboarding numbers are worrying. About forty percent of new users drop off at the account verification step.
+[00:01:06] Priya: Most of the complaints say the verification email takes too long or lands in spam.
+[00:01:18] Tom: We could switch to a magic link and send it from our own domain with proper SPF and DKIM records.
+[00:01:29] Amira: I like that. We've decided to replace the verification email with a magic link for the beta.
+[00:01:40] Amira: Tom, can you set up the DNS records and the new email template before Friday?
+[00:01:47] Tom: Sure, I will set up the SPF and DKIM records and draft the template by Friday.
+[00:02:01] Priya: I'll run five user interviews next week to see where else people get stuck.
+[00:02:12] Daniel: Do we know if the analytics events fire correctly on the new flow?
+[00:02:19] Priya: Not yet. We need to add tracking events to every onboarding step before the launch.
+[00:02:31] Amira: Okay. On hiring, we agreed to open the senior backend role first and hold the designer role until January.
+[00:02:45] Tom: Who is writing the job description?
+[00:02:49] Amira: I will write the backend job description tomorrow and share it in the hiring channel.
+[00:03:02] Daniel: Should we move the launch date if the Android fix slips?
+[00:03:08] Amira: Let's go with the current date of the twentieth unless the crash is still open on Thursday.
+[00:03:20] Priya: Action item: Daniel to send the release notes to the beta testers by the end of the week.
+[00:03:31] Amira: Great. Urgent one from me: please renew the app store certificate today, Daniel, it expires tonight.
+[00:03:41] Daniel: On it, I'll renew the certificate today.
+[00:03:47] Amira: Thanks all. Same time next week.
