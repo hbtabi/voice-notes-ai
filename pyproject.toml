@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice-notes-ai"
+version = "0.1.0"
+description = "Turn meeting audio or transcripts into summaries, decisions and owner-assigned action items."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Mohammed Hassan bin Tayyeb", email = "hasaantayyb1@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = []
+keywords = ["speech-to-text", "whisper", "transcription", "summarization", "action-items", "meetings"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+  "Topic :: Office/Business",
+]
+
+[project.optional-dependencies]
+whisper = ["faster-whisper>=1.0"]
+openai-whisper = ["openai-whisper"]
+dev = ["pytest>=7", "ruff>=0.4"]
+
+[project.scripts]
+voice-notes = "voicenotes.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/hbtabi/voice-notes-ai"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+voicenotes = ["data/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
