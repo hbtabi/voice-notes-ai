@@ -1,0 +1,23 @@
+1
+00:00:01,000 --> 00:00:06,500
+Leo: Yesterday I finished the invoice export, today I'm on the CSV importer.
+
+2
+00:00:07,000 --> 00:00:12,000
+Sana: The staging database ran out of disk space again overnight.
+
+3
+00:00:12,500 --> 00:00:18,000
+Leo: I'll add a disk usage alert on staging by Thursday.
+
+4
+00:00:18,500 --> 00:00:24,000
+Sana: Thanks. We agreed to move standups to 9:45 from next week.
+
+5
+00:00:24,500 --> 00:00:30,000
+Sana: Leo, can you review my pull request for the billing page before end of day?
+
+6
+00:00:30,500 --> 00:00:33,000
+Leo: Yes, will do.
